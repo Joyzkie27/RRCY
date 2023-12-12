@@ -9,22 +9,22 @@
     <div class="login">
       <img src="../Log In/login-bg.png" alt="image"class="login__bg ">
 
-      <form action="" class="login__form">
+      <form action="login.php" method="post" class="login__form">
         <h1 class="login__title">Login</h1>
       
       <div class="login__inputs">
       <div class="login__box">
-        <input type="text" placeholder="Username" required class="login__input">
+        <input type="text" id="username" placeholder="Username" required class="login__input" name="username">
         <i class="ri-mail-fill"></i>
       </div>
 
       <div class="login__box">
-        <input type="password" placeholder="password" required class="login__input">
+        <input type="password" id="password" placeholder="password" required class="login__input" name="password">
         <i class="ri-lock-fill"></i>
       </div>        
 
       <div class="login__box">
-        <button type="submit" class="login__button">Log In</button>
+        <button type="submit" class="login__button" name="">Log In</button>
       </div> 
       </div>
 

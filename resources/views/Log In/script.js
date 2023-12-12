@@ -11,6 +11,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event){
     if(username !== "" && password !== ""){
       alert("Logged in successfully as " + username);
       // Here you can redirect to another page or perform other actions upon successful login
+      window.location.href = "AdminH/index.html"; // Redirect to dashboard upon successful login
     } else {
       alert("Please enter username and password");
     }

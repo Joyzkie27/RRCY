@@ -240,73 +240,37 @@ lineChart.render();
 
 
 //------------------------------------------------------- DONUT CHART -------------------------------------------------
-const pieChartOptions2 = {
-  series: [44, 55, 13, 33],
+const SemiDonutChartOptions = {
+  series: [44, 55, 41, 17, 15],
   chart: {
-    width: 380,
-    type: 'donut',
-  },
-  dataLabels: {
-    enabled: false
-  },
-  responsive: [{
-    breakpoint: 480,
-    options: {
-      chart: {
-        width: 200
-      },
-      legend: {
-        show: false
-      }
-    }
-  }],
-  legend: {
-    position: 'right',
-    offsetY: 0,
-    height: 230,
+  type: 'donut',
+},
+plotOptions: {
+  pie: {
+    startAngle: -90,
+    endAngle: 90,
+    offsetY: 10
   }
+},
+grid: {
+  padding: {
+    bottom: -80
+  }
+},
+responsive: [{
+  breakpoint: 480,
+  options: {
+    chart: {
+      width: 200
+    },
+    legend: {
+      position: 'bottom'
+    }
+  }
+}]
 };
 
-const pieChart2 = new ApexCharts(
-  document.querySelector("#pie-chart2"),
-  pieChartOption2);
-pieChart2.render();
-
-
-function appendData() {
-  const arr = chart.w.globals.series.slice()
-  arr.push(Math.floor(Math.random() * (100 - 1 + 1)) + 1)
-  return arr;
-}
-
-function removeData() {
-  const arr = chart.w.globals.series.slice()
-  arr.pop()
-  return arr;
-}
-
-function randomize() {
-  return chart.w.globals.series.map(function () {
-    return Math.floor(Math.random() * (100 - 1 + 1)) + 1
-  })
-}
-
-function reset() {
-  return options.series
-}
-
-document.querySelector("#randomize").addEventListener("click", function () {
-  chart.updateSeries(randomize())
-})
-
-document.querySelector("#add").addEventListener("click", function () {
-  chart.updateSeries(appendData())
-})
-
-document.querySelector("#remove").addEventListener("click", function () {
-  chart.updateSeries(removeData())
-})
-
-document.querySelector("#reset").addEventListener("click", function () {
-  chart.updateSeries(reset())
-})
+const SemiDonutChart = new ApexCharts(
+  document.querySelector("#semidonut-chart"), 
+  SemiDonutChartOptions);
+  SemiDonutChart.render();
