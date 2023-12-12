@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CICL</title>
+
+    <!----------------------------------------------------- Montserrat Font ----------------------------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!------------------------------------------------------ Material Icons ----------------------------------------->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <!-------------------------------------------------------- Custom CSS ------------------------------------------->
+    <link rel="stylesheet" href="../AdminH/style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+
+      <!--------------------------------------------------------- Header --------------------------------------------->
+      <header class="header">
+        <div class="menu-icon" onclick="openSidebar()">
+          <span class="material-icons-outlined">menu</span>
+        </div>
+        <div class="header-left">
+          <span class="material-icons-outlined">search</span>
+        </div>
+        <div class="header-right">
+          <span class="material-icons-outlined">notifications</span>
+          <span class="material-icons-outlined">email</span>
+          <span class="material-icons-outlined">account_circle</span>
+        </div>
+      </header>
+      <!------------------------------------------------------ End Header -------------------------------------------->
+
+      <!-------------------------------------------------------- Sidebar --------------------------------------------->
+      <aside id="sidebar">
+        <div class="sidebar-title">
+          <div class="sidebar-brand">
+            <span class="material-icons-outlined">inventory</span> RRCY
+          </div>
+          <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+        </div>
+
+        <ul class="sidebar-list">
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">dashboard</span> Dashboard
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">inventory_2</span> Messages
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">fact_check</span> Calendar
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">add_shopping_cart</span> List of User
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">shopping_cart</span> List of Client
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">poll</span> Reports
+            </a>
+          </li>
+          <li class="sidebar-list-item">
+            <a href="#" target="_blank">
+              <span class="material-icons-outlined">settings</span> Settings
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!--------------------------------------------------- End Sidebar --------------------------------------------->
+
+      <!------------------------------------------------------- Main ------------------------------------------------>
+      <main class="main-container">
+        <div class="main-title">
+          <p class="font-weight-bold">CICL</p>
+        </div>
+
+        <div class="main-container">
+
+          <main>
+            <h1>Indentifying Information</h1>
+            <form class="row g-3">
+              <div class="col-md-3">
+                <label for="inputLast" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="inputLast">
+              </div>
+              <div class="col-md-4">
+                <label for="inputfirst" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="inputfirst">
+              </div>
+              <div class="col-md-3">
+                <label for="inputMiddle" class="form-label">Middle Name</label>
+                <input type="text" class="form-control" id="inputMiddle">
+              </div>
+              <div class="col-md-2">
+                <label for="inputSuffix" class="form-label">Suffix</label>
+                <select id="text" class="form-select">
+                  <option selected>Select...</option>
+                  <option>Sr.</option>
+                  <option>Jr.</option>
+                  <option>I</option>
+                  <option>II</option>
+                  <option>III</option>
+                </select>
+              </div>
+    
+    
+              <div class="col-md-2">
+                <label for="inputAge" class="form-label">Age</label>
+                <input type="text" class="form-control" id="inputAge">
+              </div>
+              <div class="col-md-2">
+                <label for="inputSex" class="form-label">Sex</label>
+                <select id="text" class="form-select">
+                  <option selected>Select...</option>
+                  <option>Female</option>
+                  <option>Male</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputBP" class="form-label">Birth Place</label>
+                <input type="text" class="form-control" id="inputBP">
+              </div>
+              <div class="col-md-3">
+                <label for="inputDOB" class="form-label">Date of Birth</label>
+                <input type="text" class="form-control" id="inputDOB" placeholder="mm/dd/yy">
+              </div>
+              <div class="col-md-2">
+                <label for="inputReligion" class="form-label">Religion</label>
+                <input type="text" class="form-control" id="inputReligion">
+                <option selected>Select...</option>
+                  <option>Roman Catholic</option>
+              </div>
+              <div class="col-md-2">
+                <label for="inputOccupation" class="form-label">Occupation</label>
+                <input type="text" class="form-control" id="inputOccupation">
+              </div>
+              <div class="col-md-4">
+                <label for="inputNOS" class="form-label">Name of School</label>
+                <input type="text" class="form-control" id="inputNOS">
+              </div>
+              <div class="col-md-3">
+                <label for="inputHEA" class="form-label">Highest Educational Attainment</label>
+                <select id="text" class="form-select">
+                  <option selected>Select...</option>
+                  <option>Elementary</option>
+                  <option>High School</option>
+                  <option>College</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputCA" class="form-label">Class Adviser</label>
+                <input type="text" class="form-control" id="inputCA">
+              </div>
+    
+    
+              <div class="col-md-4">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Street, Apartment, studio, or floor">
+              </div>
+              <div class="col-md-4">
+                <label for="inputBarangay" class="form-label">Barangay</label>
+                <select id="text" class="form-select">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <label for="inputProvince" class="form-label">Province</label>
+                <select id="text" class="form-select">
+                  <option selected>Select...</option>
+                  <option>Compostel Valley</option>
+                  <option>Davao del Norte</option>
+                  <option>Davao Occidental</option>
+                  <option>Davao Oriental</option>
+                  <option>Davao del Sur</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="inputCity" class="form-label">City</label>
+                <select id="text" class="form-select">
+                  <option selected>Select...</option>
+                  <option>Panabo City</option>
+                  <option>Samal City</option>
+                  <option>Tagum City</option>
+                  <option>Davao City</option>
+                  <option>Digos City</option>
+                  <option>Mati City</option>
+                </select>
+              </div>
+    
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+              </div>
+    
+    
+              <h1>Problem Presented</h1>          
+              <!DOCTYPE html>
+              <html lang="en">
+              <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Recommendation Form</title>
+              </head>
+              <body>
+                <form>
+                  <label for="recommendation">Recommendation:</label>
+                  <br>
+                  <textarea id="recommendation" name="recommendation" rows="4" cols="50" placeholder="Enter your recommendation here..."></textarea>
+                </form>
+              </body>
+              </html>
+    
+              <h1>Physical description of the minor</h1>
+              
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Checkbox Form</title>
+              </head>
+              <body>
+                <form>
+                  <label for="checkbox1">
+                    <input type="checkbox" id="checkbox1" name="checkboxGroup" value="option1"> Death Parents
+                  </label>
+                  <br>
+                  
+                  <label for="checkbox2">
+                    <input type="checkbox" id="checkbox2" name="checkboxGroup" value="option2"> Separation from the family
+                  </label>
+                  <br>
+              
+                  <label for="checkbox3">
+                    <input type="checkbox" id="checkbox3" name="checkboxGroup" value="option3"> Victim of natural / manmade disaster 
+                  </label>
+                  <br>
+    
+                  <label for="checkbox4">
+                    <input type="checkbox" id="checkbox4" name="checkboxGroup" value="option3"> Victim of apprehension 
+                  </label>
+                  <br>
+    
+                  <label for="checkbox5">
+                    <input type="checkbox" id="checkbox5" name="checkboxGroup" value="option3"> Victim of physical abuse
+                  </label>
+                  <br>
+    
+                  <label for="checkbox6">
+                    <input type="checkbox" id="checkbox6" name="checkboxGroup" value="option3"> With suicidal tendencies
+                  </label>
+                  <br>
+    
+                  <label for="checkbox7">
+                    <input type="checkbox" id="checkbox7" name="checkboxGroup" value="option3"> mistaken identity
+                  </label>
+                  <br>
+    
+                  <label for="checkbox8">
+                    <input type="checkbox" id="checkbox8" name="checkboxGroup" value="option3"> Abandonment 
+                  </label>
+                  <br>
+    
+                  <label for="checkbox9">
+                    <input type="checkbox" id="checkbox9" name="checkboxGroup" value="option3"> Serious Accident
+                  </label>
+                  <br>
+    
+                  <label for="checkbox10">
+                    <input type="checkbox" id="checkbox10" name="checkboxGroup" value="option3"> Victim of demolition
+                  </label>
+                  <br>
+    
+                  <label for="checkbox11">
+                    <input type="checkbox" id="checkbox11" name="checkboxGroup" value="option3"> Victim of sexual abuse
+                  </label>
+                  <br>
+    
+                  <label for="checkbox12">
+                    <input type="checkbox" id="checkbox12" name="checkboxGroup" value="option3"> Victim of verbal abuse
+                  </label>
+                  <br>
+    
+                  <label for="checkbox13">
+                    <input type="checkbox" id="checkbox13" name="checkboxGroup" value="option3"> Acquired disability
+                  </label>
+                  <br>
+              
+      
+              <h1>INITIAL ASSESSMENT</h1>
+    
+             <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Province-City-Barangay Selection</title>
+    </head>
+    <body>
+        <label for="province">Province:</label>
+        <select id="province" onchange="loadCities()">
+            <!-- Options will be populated dynamically using JavaScript -->
+        </select>
+    
+        <label for="city">City:</label>
+        <select id="city" onchange="loadBarangays()">
+            <!-- Options will be populated dynamically using JavaScript -->
+        </select>
+    
+        <label for="barangay">Barangay:</label>
+        <select id="barangay">
+            <!-- Options will be populated dynamically using JavaScript -->
+        </select>
+  </body>
+</html>
